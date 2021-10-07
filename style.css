@@ -1,0 +1,57 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+}
+
+#page {
+    grid-gap: 15px;
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main sidebar"
+}
+
+#page > *{
+    border : 1px solid black;
+
+}
+
+header h1 {
+    background-color: teal;
+}
+
+header {
+    text-align: center;
+    grid-area: header;
+    background-color: teal;
+}
+
+#headerForm {
+    margin: 30px;
+} 
+
+
+form {
+    margin: 30px;
+    background-color: teal;
+    color: black;
+}
+
+main {
+    grid-area: main;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.history{
+grid-area : sidebar;
+text-align: center;
+}
+
+.history ul li {
+    list-style: none;
+}
