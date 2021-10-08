@@ -1,26 +1,30 @@
 *{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
     color: rgb(0, 0, 0);
 }
 
 #page {
     grid-gap: 15px;
-    max-width: 800px;
     width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-areas: 
     "header header header"
     "main main sidebar"
+    "days days sidebar"
 }
 
-#page > *{
-    border : 1px solid black;
-
+header {
+    border : 3px solid black;
 }
 
 header h1 {
+    color: white;
     background-color: teal;
+}
+
+label {
+    color: white;
 }
 
 header {
@@ -41,17 +45,52 @@ form {
 }
 
 main {
+    padding:30px;
     grid-area: main;
     text-align: center;
-    padding-top: 30px;
-
+    border: 1px solid teal;
+    background-color: rgb(231, 231, 231);
+    
+}
+.desc {
+    margin: 15px 0px;
 }
 
 .history{
+border: none;
 grid-area : sidebar;
-text-align: center;
 }
 
-.history ul li {
-    list-style: none;
+.display {
+    display: grid;
+    grid-area : days;
+    grid-template-areas: 
+    "today tomorrow dayAfter";
+}
+
+.display > *  {
+    text-align: center;
+}
+
+.new_li{
+    color: blue;
+}
+
+.today {
+    grid-area:today;
+}
+
+.tomorrow {
+    grid-area:tomorrow;
+}
+
+.dayAfterTomorrow{
+    grid-area: dayAfter;
+}
+
+.anchor{
+    color: blue;
+    text-decoration: underline;
+    cursor :pointer;
+
 }

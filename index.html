@@ -8,32 +8,46 @@
     <link rel="stylesheet" href="style.css">
     <script defer src = "script.js"></script>
 </head>
-
 <body>
 <div id = "page" >
     <header>
         <h1>Weather App</h1>
 
-      <form id = "headerForm "action="">
-        <label for="">pick a Location</label>
-          <input  id = "selected-city" name = "selected-city" type = "text" placeholder = "City" >
-          <input type="submit" value = "get weather">
+      <form id = "form_header "action="">
+
+        <label class = "label">Pick a Location</label>
+          <input  id = "selected_city" name = "selected_city" type = "text" placeholder = "City" >
+          <input type="submit" value = "Get Weather">
         </label>
+
       </form>
 
     </header>
 
-    <main class = "display">
-        <div>Choose a location to view the weather</div>
+    <main class = "main">
+        <div class = "chosenCity">Choose a location to view the weather</div>
     </main>
 
     <div class = "history">
-        <div>Previous Searches</div>
-        <ul>
-            <li>No previous search </li>
+        <h3> Previous Searches</h3>
+        <ul id = "ul_history">
+            <div id = "display_li">No previous search </div>
         </ul>
     </div>
 
+    <div class = "display">
+      <div class = "today">
+        <h4>Today</h4>
+      </div>
+      <div class ="tomorrow">
+        <h4>Tomorrow</h4>
+      </div>
+      <div class = "dayAfterTomorrow">
+        <h4>Day After Tomorrow</h4>
+      </div>
+    </div>
+
 </div> 
+
 </body>
 </html>
