@@ -9,45 +9,56 @@
     <script defer src = "script.js"></script>
 </head>
 <body>
+
 <div id = "page" >
+
+  <nav>
+    <img class = "logo_pic" src="navbarLogo.png" alt="logo">
+    <div class = "nav_link">News</div>
+    <div class = "nav_link">Maps</div>
+    <div class = "nav_link">More</div>
+</nav>
+    
     <header>
         <h1>Weather App</h1>
-
-      <form id = "form_header "action="">
-
-        <label class = "label">Pick a Location</label>
-          <input  id = "selected_city" name = "selected_city" type = "text" placeholder = "City" >
-          <input type="submit" value = "Get Weather">
-        </label>
-
+      <form  name="input-form" id = "form_header "action="">
+          <input  class = "wth_input" id = "selected_city" name = "selected_city" type = "text" placeholder = "Pick a Location" >
+          <input  class = "submit_btn" type="submit" value = "Weather">
       </form>
-
     </header>
+
+<div class = "display">
 
     <main class = "main">
         <div class = "chosenCity">Choose a location to view the weather</div>
     </main>
 
+    <div class = "days">
+      <div class = "today">
+      </div>
+
+      <div class ="tomorrow">
+      </div>
+
+      <div class = "dayAfterTomorrow">
+ 
+      </div>
+    </div>
+
+</div>
     <div class = "history">
-        <h3> Previous Searches</h3>
+        <h3>Previous Searches</h3>
         <ul id = "ul_history">
             <div id = "display_li">No previous search </div>
         </ul>
     </div>
-
-    <div class = "display">
-      <div class = "today">
-        <h4>Today</h4>
-      </div>
-      <div class ="tomorrow">
-        <h4>Tomorrow</h4>
-      </div>
-      <div class = "dayAfterTomorrow">
-        <h4>Day After Tomorrow</h4>
-      </div>
-    </div>
-
+  </div>
 </div> 
+
+<footer>
+  <img src="footerLogo.png" alt="Footer-pic">
+  <div>Terms of Use | Privacy Policy | Cookie Policy | TAG Disclosure | Do Not Sell My Data</div>
+</footer>
 
 </body>
 </html>
