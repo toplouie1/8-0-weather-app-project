@@ -3,7 +3,6 @@ function start (city,addRecent) {
    if(!city.length){
       city.textContent  =  "";
    }else {
-
 fetch(`https://wttr.in/${city}?format=j1`)
 .then(res => res.json())
 .then(data => {
@@ -66,7 +65,7 @@ fetch(`https://wttr.in/${city}?format=j1`)
     anchor_link.addEventListener("click", (e) => {
      start(e.target.textContent, false);
      })
-
+     
    }
  })
  .catch(err => {
